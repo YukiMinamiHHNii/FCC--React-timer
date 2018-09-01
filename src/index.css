@@ -1,0 +1,66 @@
+:root {
+	--font-size: 16px;
+	--font-family: sans-serif;
+	--font-color: #fff;
+	--color-main: #303030;
+	--color-secondary: #404040;
+	--pad-btn: #c4c5c9;
+	--pad-btn-active: #f98d11;
+	--general-padding: 1rem;
+}
+
+html {
+	font-family: var(--font-family);
+	font-size: var(--font-size);
+	color: var(--font-color);
+	line-height: 1.6;
+	box-sizing: border-box;
+	background-color: var(--color-main);
+}
+
+*,
+*:after,
+*:before {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+#root {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.app {
+	background-color: var(--color-secondary);
+	display: flex;
+	flex-direction: column;
+	padding: var(--general-padding);
+}
+
+#break-ctrl,
+#session-ctrl,
+#timer-ctrl {
+	text-align: center;
+}
+
+.pad {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding: var(--general-padding);
+}
+
+button {
+	padding: var(--general-padding);
+	border: none;
+	background-color: var(--pad-btn);
+	font-size: 1.5rem;
+}
+
+button:hover{
+	background-color: var(--pad-btn-active);
+	color: var(--font-color);
+}
